@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="background" maxHeight="700.0" maxWidth="1000.0" prefHeight="700.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="uidesign.UIDocumentController">
+    <children>
+      <MenuBar prefHeight="29.0" prefWidth="1198.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#handleOpen" text="Open Input File" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Pane fx:id="view" layoutX="343.0" layoutY="86.0" maxHeight="500.0" maxWidth="500.0" prefHeight="500.0" prefWidth="500.0" />
+      <Button fx:id="next" layoutX="64.0" layoutY="172.0" mnemonicParsing="false" onAction="#handleNextStep" prefHeight="76.0" prefWidth="165.0" text="Next Step">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Button>
+      <Label fx:id="label" alignment="TOP_LEFT" layoutX="68.0" layoutY="399.0" prefHeight="225.0" prefWidth="234.0" textAlignment="CENTER">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="start" layoutX="64.0" layoutY="171.0" mnemonicParsing="false" onAction="#handleStart" prefHeight="76.0" prefWidth="165.0" text="Start">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Button>
+      <AnchorPane layoutX="878.0" layoutY="86.0" prefHeight="267.0" prefWidth="300.0">
+         <children>
+            <Label layoutX="32.0" layoutY="77.0" text="Current Position:" />
+            <Label layoutX="32.0" layoutY="39.0" text="Last Position:" />
+            <Label fx:id="lastLabel" layoutX="150.0" layoutY="39.0" />
+            <Label fx:id="currLabel" layoutX="150.0" layoutY="77.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="909.0" layoutY="412.0" prefHeight="200.0" prefWidth="219.0">
+         <children>
+            <Label layoutX="14.0" layoutY="22.0" text="Robot:" />
+            <Label layoutX="14.0" layoutY="92.0" text="Obstacle 2:" />
+            <Label layoutX="14.0" layoutY="54.0" text="Obstacle 1:" />
+            <Label layoutX="93.0" layoutY="22.0" text="ORANGE" textFill="#ff9000" />
+            <Label layoutX="93.0" layoutY="54.0" text="BLACK" />
+            <Label layoutX="93.0" layoutY="92.0" text="AQUA" textFill="AQUA" />
+         </children>
+      </AnchorPane>
+    </children>
+</AnchorPane>
